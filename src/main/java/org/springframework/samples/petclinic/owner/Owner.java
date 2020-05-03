@@ -58,6 +58,10 @@ public class Owner extends Person {
 	@NotEmpty
 	@Digits(fraction = 0, integer = 10)
 	private String telephone;
+	
+	@Column(name = "age")
+	@NotEmpty
+	private String age;
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
 	private Set<Pet> pets;
@@ -80,6 +84,14 @@ public class Owner extends Person {
 
 	public String getTelephone() {
 		return this.telephone;
+	}
+	
+	public void setAge(String age) {
+		this.city = age;
+	}
+
+	public String getAge() {
+		return this.age;
 	}
 
 	public void setTelephone(String telephone) {
