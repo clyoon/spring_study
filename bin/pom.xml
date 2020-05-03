@@ -134,7 +134,6 @@
   </dependencies>
 
   <build>
-  <pluginManagement>
     <plugins>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
@@ -280,7 +279,6 @@
         </dependencies>
       </plugin>
     </plugins>
-    </pluginManagement>
   </build>
 
   <!-- Apache 2 license -->
